@@ -18,4 +18,3 @@ This course is designed to teach me the basics of building webpages using:
 
 ## Why follow along? 🤔
 I want to share my journey from the bottom up — starting with the basics and working my way toward building cool, unique projects. It’s all about learning, growing, and eventually tackling more complex challenges!
----
