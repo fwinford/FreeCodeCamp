@@ -8,7 +8,7 @@ This course is designed to teach me the basics of building webpages using:
 - **HTML** — The backbone of any webpage.
 - **CSS** — What makes the web look good and function well on any screen size.
 
-### Projects I'll Be Working On 🛠️
+## Projects I'll Be Working On 🛠️
 
 - [ ] **Survey Form** 📝 — A simple form to gather responses. Can be anything from feedback to a fun poll!
 - [ ] **Tribute Page** 🏆 — A page dedicated to someone or something I admire.
@@ -16,6 +16,6 @@ This course is designed to teach me the basics of building webpages using:
 - [ ] **Product Landing Page** 🛒 — A page to showcase a product in an engaging way.
 - [ ] **Personal Portfolio Website** 🌟 — The project that brings everything together, showcasing all the skills I’ve learned.
 
-### Why follow along? 🤔
+## Why follow along? 🤔
 I want to share my journey from the bottom up — starting with the basics and working my way toward building cool, unique projects. It’s all about learning, growing, and eventually tackling more complex challenges!
 ---
