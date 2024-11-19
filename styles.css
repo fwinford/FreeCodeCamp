@@ -1,25 +1,70 @@
 body{
-    background-color: pink;
+    background-color: whitesmoke;
 }
-h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.header-container {
+    font-family: Kantumruy Pro, sans-serif;
+    color: rgb(131, 131, 131);
+    text-align: center;
     border-radius: 20px; /* Rounded corners */
-    padding: 10px; /* Space between text and border */
-    background-color: rgba(255,255,255, 0.5); /* Ensure background color is consistent */
+    padding: 20px; /* Space between text and border */
+    background-color: rgba(251, 187, 223, 0.75); /* Ensure background color is consistent */
+    margin-bottom: 20px; /* Space between header and sub-header */
+    margin: 20px auto; /* Center the container and add vertical margin */
+    max-width: 300px; /* Set a maximum width */
+
+}
+
+.header-container h1, .header-container h3 {
+  margin: 0;
+}
+
+.header-container h1 {
+  font-size: 2.5em; /* Larger font size for h1 */
+  font-weight: bold; /* Bold font weight for h1 */
+  color: rgb(72, 71, 71); /* Darker color for h1 */
+}
+
+.header-container h3 {
+  margin: 0;
+  font-size: 1.75em; /* Smaller font size for h3 */
+  font-weight: normal; /* Normal font weight for h3 */
+  color: rgb(131, 131, 131); /* Lighter color for h3 */
+  margin-top: 10px; /* Space between h1 and h3 */
 }
   
+.sub-header-container {
+  text-align: center;
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px; /* Space between text and border */
+  background-color: rgba(251, 187, 223, 0.75); /* Ensure background color is consistent */
+  margin-bottom: 20px; /* Space between sub-header and links */
+  margin: 20px auto; /* Center the container and add vertical margin */
+  max-width: 300px; /* Set a maximum width */
+}
+.sub-header-container h3 {
+  margin: 0;
+  font-size: 1.5em; /* Font size for h3 */
+  font-weight: normal; /* Normal font weight for h3 */
+  color: rgb(72, 71, 71); /* Lighter color for h3 */
+}
+h2{
+  font-size: medium;
+}
+
   a {
-    color: rgb(72, 71, 71);
+    color: rgb(255, 182, 193);
+    text-decoration: none;
   }
   
   a:visited {
-    color: rgb(201, 199, 199);
+    color: rgb(255, 105, 180);
   }
   
   a:hover {
-    color: rgb(190, 149, 226);
+    color: rgb(221, 160, 221);
+    text-decoration: underline;
   }
   
   a:active {
-    color: rgb(255, 255, 255);
+    color: rgb(238, 130, 238);
   }
