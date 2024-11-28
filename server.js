@@ -1,20 +1,37 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
-app.use(bodyParser.urlencoded({ extended: true })); // Parse form data
-app.use(express.static('public')); // Serve static files (CSS, images)
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static('public')); // Serve static files from the public directory
 
 // Routes
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.get('/form', (req, res) => {
-  res.sendFile(__dirname + '/public/form.html');
+  res.sendFile(path.join(__dirname, 'public', 'form.html'));
+});
+
+app.get('/src/CatPhotoApp', (req, res) => {
+  res.sendFile(path.join(__dirname, 'src', 'CatPhotoApp', 'index.html'));
+});
+
+app.get('/src/Cafe-Menu', (req, res) => {
+  res.sendFile(path.join(__dirname, 'src', 'Cafe-Menu', 'index.html'));
+});
+
+app.get('/src/Crayons', (req, res) => {
+  res.sendFile(path.join(__dirname, 'src', 'Crayons', 'index.html'));
+});
+
+app.get('/src/Registration-Form', (req, res) => {
+  res.sendFile(path.join(__dirname, 'src', 'Registration-Form', 'index.html'));
 });
 
 app.post('/submit-form', (req, res) => {

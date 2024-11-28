@@ -10,7 +10,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
 .container {
@@ -21,6 +22,8 @@ body {
   max-width: 500px;
   width: 100%;
   text-align: center;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  margin: 20px; /* Add margin to ensure it doesn't touch the edges of the viewport */
 }
 
 h1 {
@@ -32,7 +35,7 @@ h1 {
 label {
   display: block;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: bold; /* Make questions bold */
 }
 
 input[type="text"],
@@ -46,6 +49,23 @@ textarea {
   box-sizing: border-box;
 }
 
+input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+  width: auto;
+  margin-bottom: 10px;
+  font-weight: normal; /* Make answers not bold */
+}
+
+.radio-group {
+  text-align: left; /* Align radio button groups to the left */
+  margin-bottom: 20px; /* Add space between groups */
+}
+
 button {
   background-color: rgb(255, 182, 193); /* Light pink background */
   color: white; /* White text color */
@@ -53,6 +73,7 @@ button {
   border-radius: 12px; /* Rounded edges */
   padding: 10px 20px; /* Padding for the button */
   font-size: medium; /* Font size */
+  font-weight: bold; /* Make text bold */
   cursor: pointer; /* Pointer cursor on hover */
   transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
