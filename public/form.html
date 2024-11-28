@@ -9,20 +9,21 @@
 <body>
   <div class="container">
     <h1>programming survey</h1>
-    <form action="/submit-form" method="POST">
+    <form action="/submit-form" method="POST" onsubmit="return validateForm()">
       <!-- Question 1 -->
-      <label for="favorite-language">what’s your go-to programming language?</label>
+      <label for="favorite-language">what's your go-to programming language?</label>
       <select id="favorite-language" name="favorite-language" required>
-        <option value="Python">python</option>
-        <option value="Java">java</option>
-        <option value="JavaScript">javascript</option>
-        <option value="C++">c++</option>
-        <option value="Other">other</option>
+        <option value="" disabled selected>choose your language...</option>
+        <option value="python">python</option>
+        <option value="java">java</option>
+        <option value="javascript">javascript</option>
+        <option value="cpp">c++</option>
+        <option value="other">other</option>
       </select>
-      <p>no judgment here, we all have that one language we vibe with.</p>
+      <p>no judgment here(unless it's c)</p>
 
       <!-- Question 2 -->
-      <label>when you hit a bug, what’s your first move?</label>
+      <label for="bug-fix">when you hit a bug, what's your first move?</label>
       <div class="radio-group">
         <input type="radio" id="google" name="bug-fix" value="google it, pray i find something relevant" required>
         <label for="google">google it, pray i find something relevant</label>
@@ -41,7 +42,7 @@
       </div>
 
       <!-- Question 3 -->
-      <label>what motivates you to keep coding?</label>
+      <label for="motivation">what motivates you to keep coding?</label>
       <div class="radio-group">
         <input type="radio" id="job-market" name="motivation" value="the job market is scary and i need to get that bag 💸" required>
         <label for="job-market">the job market is scary and i need to get that bag 💸</label>
@@ -60,7 +61,7 @@
       </div>
 
       <!-- Question 4 -->
-      <label>how do you approach a new coding project?</label>
+      <label for="approach">how do you approach a new coding project?</label>
       <div class="radio-group">
         <input type="radio" id="jump-in" name="approach" value="jump in, figure it out as i go" required>
         <label for="jump-in">jump in, figure it out as i go</label>
@@ -79,7 +80,7 @@
       </div>
 
       <!-- Question 5 -->
-      <label>what’s your biggest coding struggle?</label>
+      <label for="struggle">what’s your biggest coding struggle?</label>
       <div class="radio-group">
         <input type="radio" id="stuck-error" name="struggle" value="i’m stuck on this one error and i have no idea why" required>
         <label for="stuck-error">i’m stuck on this one error and i have no idea why</label>
@@ -100,24 +101,44 @@
       <!-- Question 6 -->
       <label for="experience">how many years of programming experience do you have?</label>
       <select id="experience" name="experience" required>
-        <option value="Less than 1 year">less than 1 year</option>
+        <option value="" disabled selected>choose your experience...</option>
+        <option value="less than 1 year">less than 1 year</option>
         <option value="1-2 years">1-2 years</option>
         <option value="3-5 years">3-5 years</option>
-        <option value="More than 5 years">more than 5 years</option>
+        <option value="more than 5 years">more than 5 years</option>
       </select>
 
       <!-- Question 7 -->
       <label for="project-type">what type of projects do you enjoy working on the most?</label>
       <select id="project-type" name="project-type" required>
-        <option value="Web Development">web development</option>
-        <option value="Mobile Apps">mobile apps</option>
-        <option value="Data Science">data science</option>
-        <option value="Game Development">game development</option>
-        <option value="Other">other</option>
+        <option value="" disabled selected>choose your project type...</option>
+        <option value="web development">web development</option>
+        <option value="mobile apps">mobile apps</option>
+        <option value="data science">data science</option>
+        <option value="game development">game development</option>
+        <option value="other">other</option>
       </select>
 
       <button type="submit">submit</button>
     </form>
   </div>
+  <script>
+    function validateForm() {
+      const language = document.getElementById('favorite-language').value;
+      const bugFix = document.querySelector('input[name="bug-fix"]:checked');
+      
+      if (!language || language === "") {
+        alert('Please select a programming language');
+        return false;
+      }
+      
+      if (!bugFix) {
+        alert('Please select how you handle bugs');
+        return false;
+      }
+      
+      return true;
+    }
+  </script>
 </body>
 </html>
