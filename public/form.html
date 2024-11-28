@@ -29,23 +29,23 @@
         <label for="google">google it, pray i find something relevant</label>
       </div>
       <div class="radio-group">
-        <input type="radio" id="group-chat" name="bug-fix" value="ask my group chat (save me, fam!)">
-        <label for="group-chat">ask my group chat (save me, fam!)</label>
+        <input type="radio" id="groupChat" name="bugFix" value="ask_group_chat">
+        <label for="groupChat">ask my group chat (save me!)</label>
       </div>
       <div class="radio-group">
-        <input type="radio" id="break" name="bug-fix" value="take a break, come back fresh">
+        <input type="radio" id="break" name="bugFix" value="take_break">
         <label for="break">take a break, come back fresh</label>
       </div>
       <div class="radio-group">
-        <input type="radio" id="stare" name="bug-fix" value="just stare at the screen until i go mad">
+        <input type="radio" id="stare" name="bugFix" value="stare_screen">
         <label for="stare">just stare at the screen until i go mad</label>
       </div>
 
       <!-- Question 3 -->
-      <label for="motivation">what motivates you to keep coding?</label>
+      <label>what motivates you to keep coding?</label>
       <div class="radio-group">
-        <input type="radio" id="job-market" name="motivation" value="the job market is scary and i need to get that bag 💸" required>
-        <label for="job-market">the job market is scary and i need to get that bag 💸</label>
+        <input type="radio" id="job-market" name="motivation" value="the job market is scary..." required>
+        <label for="job-market">the job market is scary...</label>
       </div>
       <div class="radio-group">
         <input type="radio" id="solving-problems" name="motivation" value="solving problems feels elite">
@@ -61,7 +61,7 @@
       </div>
 
       <!-- Question 4 -->
-      <label for="approach">how do you approach a new coding project?</label>
+      <label>how do you approach a new coding project?</label>
       <div class="radio-group">
         <input type="radio" id="jump-in" name="approach" value="jump in, figure it out as i go" required>
         <label for="jump-in">jump in, figure it out as i go</label>
@@ -75,12 +75,12 @@
         <label for="distracted">start coding, get distracted by tiktok for a few hours</label>
       </div>
       <div class="radio-group">
-        <input type="radio" id="google-everything" name="approach" value="google everything and cry silently while i pretend to work">
-        <label for="google-everything">google everything and cry silently while i pretend to work</label>
+        <input type="radio" id="chat-gpt everything" name="approach" value="chatpgt everything and act like i know what's going on">
+        <label for="google-everything">chatpgt everything and act like i know what's going on</label>
       </div>
 
       <!-- Question 5 -->
-      <label for="struggle">what’s your biggest coding struggle?</label>
+      <label>what’s your biggest coding struggle?</label>
       <div class="radio-group">
         <input type="radio" id="stuck-error" name="struggle" value="i’m stuck on this one error and i have no idea why" required>
         <label for="stuck-error">i’m stuck on this one error and i have no idea why</label>
@@ -101,22 +101,20 @@
       <!-- Question 6 -->
       <label for="experience">how many years of programming experience do you have?</label>
       <select id="experience" name="experience" required>
-        <option value="" disabled selected>choose your experience...</option>
-        <option value="less than 1 year">less than 1 year</option>
+        <option value="Less than 1 year">less than 1 year</option>
         <option value="1-2 years">1-2 years</option>
         <option value="3-5 years">3-5 years</option>
-        <option value="more than 5 years">more than 5 years</option>
+        <option value="More than 5 years">more than 5 years</option>
       </select>
 
       <!-- Question 7 -->
       <label for="project-type">what type of projects do you enjoy working on the most?</label>
       <select id="project-type" name="project-type" required>
-        <option value="" disabled selected>choose your project type...</option>
-        <option value="web development">web development</option>
-        <option value="mobile apps">mobile apps</option>
-        <option value="data science">data science</option>
-        <option value="game development">game development</option>
-        <option value="other">other</option>
+        <option value="Web Development">web development</option>
+        <option value="Mobile Apps">mobile apps</option>
+        <option value="Data Science">data science</option>
+        <option value="Game Development">game development</option>
+        <option value="Other">other</option>
       </select>
 
       <button type="submit">submit</button>
@@ -124,21 +122,21 @@
   </div>
   <script>
     function validateForm() {
-      const language = document.getElementById('favorite-language').value;
-      const bugFix = document.querySelector('input[name="bug-fix"]:checked');
-      
-      if (!language || language === "") {
-        alert('Please select a programming language');
-        return false;
-      }
-      
-      if (!bugFix) {
-        alert('Please select how you handle bugs');
-        return false;
-      }
-      
-      return true;
+        const language = document.getElementById('favorite-language').value;
+        const bugFix = document.querySelector('input[name="bug-fix"]:checked');
+        
+        if (!language || language === "") {
+            alert('Please select a programming language');
+            return false;
+        }
+        
+        if (!bugFix) {
+            alert('Please select how you handle bugs');
+            return false;
+        }
+        
+        return true;
     }
-  </script>
+    </script>
 </body>
 </html>
