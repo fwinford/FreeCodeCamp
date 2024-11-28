@@ -1,0 +1,90 @@
+body{
+    background-color: whitesmoke;
+}
+.header-container {
+    font-family: Kantumruy Pro, sans-serif;
+    color: rgb(131, 131, 131);
+    text-align: center;
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Space between text and border */
+    background-color: rgba(251, 187, 223, 0.75); /* Ensure background color is consistent */
+    margin-bottom: 20px; /* Space between header and sub-header */
+    margin: 20px auto; /* Center the container and add vertical margin */
+    max-width: 300px; /* Set a maximum width */
+
+}
+
+.header-container h1, .header-container h3 {
+  margin: 0;
+}
+
+.header-container h1 {
+  font-size: 2.5em; /* Larger font size for h1 */
+  font-weight: bold; /* Bold font weight for h1 */
+  color: rgb(131, 131, 131); /* Darker color for h1 */
+}
+
+.header-container h3 {
+  margin: 0;
+  font-size: 1.75em; /* Smaller font size for h3 */
+  font-weight: normal; /* Normal font weight for h3 */
+  color: rgb(131, 131, 131); /* Lighter color for h3 */
+  margin-top: 10px; /* Space between h1 and h3 */
+}
+  
+.sub-header-container {
+  text-align: center;
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px; /* Space between text and border */
+  background-color: rgba(251, 187, 223, 0.75); /* Ensure background color is consistent */
+  margin-bottom: 20px; /* Space between sub-header and links */
+  margin: 20px auto; /* Center the container and add vertical margin */
+  max-width: 300px; /* Set a maximum width */
+}
+.sub-header-container h3 {
+  margin: 0;
+  font-size: 1.5em; /* Font size for h3 */
+  font-weight: normal; /* Normal font weight for h3 */
+  color: rgb(72, 71, 71); /* Lighter color for h3 */
+}
+h2{
+  font-size: medium;
+}
+
+a {
+  color: rgb(93, 156, 236); /* Light blue color */
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(72, 123, 204); /* Darker blue for visited links */
+}
+
+a:hover {
+  color: rgb(123, 104, 238); /* Light purple for hover */
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(75, 0, 130); /* Indigo for active links */
+}
+
+/* Button Styles */
+button {
+  background-color: rgb(93, 156, 236); /* Light blue background */
+  color: white; /* White text color */
+  border: none; /* Remove default border */
+  border-radius: 12px; /* Rounded edges */
+  padding: 10px 20px; /* Padding for the button */
+  font-size: medium; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+button:hover {
+  background-color: rgb(123, 104, 238); /* Light purple background on hover */
+}
+
+button:active {
+  background-color: rgb(75, 0, 130); /* Indigo background on active */
+}
