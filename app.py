@@ -13,9 +13,15 @@ def index():
 def form():
     return send_from_directory('public', 'form.html')
 
-@app.route('/src/<path:path>')
-def serve_src(path):
-    return send_from_directory('srcc', path)
+@app.route('/src/<path:filename>')
+def serve_src(filename):
+    # Handle nested paths within src directory
+    parts = filename.split('/')
+    if len(parts) > 1:
+        # For nested paths like CatPhotoApp/index.html
+        return send_from_directory(os.path.join('src', *parts[:-1]), parts[-1])
+    # For files directly in src
+    return send_from_directory('src', filename)
 
 @app.route('/styles/<path:path>')
 def serve_styles(path):
