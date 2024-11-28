@@ -13,6 +13,18 @@ def index():
 def form():
     return send_from_directory('public', 'form.html')
 
+@app.route('/src/<path:path>')
+def serve_src(path):
+    return send_from_directory('srcc', path)
+
+@app.route('/styles/<path:path>')
+def serve_styles(path):
+    return send_from_directory('public/styles', path)
+
+@app.route('/images/<path:path>')
+def serve_images(path):
+    return send_from_directory('public/images', path)
+
 @app.route('/submit-form', methods=['POST'])
 def submit_form():
     favorite_language = request.form.get('favorite-language')
