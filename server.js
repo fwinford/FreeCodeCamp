@@ -35,16 +35,26 @@ app.get('/src/Registration-Form', (req, res) => {
 });
 
 app.post('/submit-form', (req, res) => {
-  const { name, email, message } = req.body;
+  const { favoriteLanguage, bugFix, motivation, approach, struggle } = req.body;
 
-  // For now, just log the form data to the console
-  console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+  // Log the form data to the console
+  console.log(`Favorite Language: ${favoriteLanguage}`);
+  console.log(`Bug Fix: ${bugFix}`);
+  console.log(`Motivation: ${motivation}`);
+  console.log(`Approach: ${approach}`);
+  console.log(`Struggle: ${struggle}`);
 
   // Send a response back to the user
   res.send(`
-    <h1>Thanks for submitting, ${name}!</h1>
-    <p>We received your message:</p>
-    <blockquote>${message}</blockquote>
+    <h1>Thanks for submitting the survey!</h1>
+    <p>We received your responses:</p>
+    <ul>
+      <li><strong>Favorite Language:</strong> ${favoriteLanguage}</li>
+      <li><strong>Bug Fix:</strong> ${bugFix}</li>
+      <li><strong>Motivation:</strong> ${motivation}</li>
+      <li><strong>Approach:</strong> ${approach}</li>
+      <li><strong>Struggle:</strong> ${struggle}</li>
+    </ul>
     <a href="/">Go back to Home</a>
   `);
 });

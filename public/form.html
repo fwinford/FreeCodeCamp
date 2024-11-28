@@ -29,7 +29,7 @@
       </div>
       <div class="radio-group">
         <input type="radio" id="group-chat" name="bug-fix" value="ask my group chat (save me, fam!)">
-        <label for="group-chat">ask my group chat (save me!)</label>
+        <label for="group-chat">ask my group chat (save me, fam!)</label>
       </div>
       <div class="radio-group">
         <input type="radio" id="break" name="bug-fix" value="take a break, come back fresh">
@@ -44,7 +44,7 @@
       <label>what motivates you to keep coding?</label>
       <div class="radio-group">
         <input type="radio" id="job-market" name="motivation" value="the job market is scary and i need to get that bag 💸" required>
-        <label for="job-market">the job market is scary...</label>
+        <label for="job-market">the job market is scary and i need to get that bag 💸</label>
       </div>
       <div class="radio-group">
         <input type="radio" id="solving-problems" name="motivation" value="solving problems feels elite">
@@ -94,8 +94,27 @@
       </div>
       <div class="radio-group">
         <input type="radio" id="motivation" name="struggle" value="motivation – i swear i’ll code tomorrow, but today’s just not it">
-        <label for="motivation">motivation</label>
+        <label for="motivation">motivation – i swear i’ll code tomorrow, but today’s just not it</label>
       </div>
+
+      <!-- Question 6 -->
+      <label for="experience">how many years of programming experience do you have?</label>
+      <select id="experience" name="experience" required>
+        <option value="Less than 1 year">less than 1 year</option>
+        <option value="1-2 years">1-2 years</option>
+        <option value="3-5 years">3-5 years</option>
+        <option value="More than 5 years">more than 5 years</option>
+      </select>
+
+      <!-- Question 7 -->
+      <label for="project-type">what type of projects do you enjoy working on the most?</label>
+      <select id="project-type" name="project-type" required>
+        <option value="Web Development">web development</option>
+        <option value="Mobile Apps">mobile apps</option>
+        <option value="Data Science">data science</option>
+        <option value="Game Development">game development</option>
+        <option value="Other">other</option>
+      </select>
 
       <button type="submit">submit</button>
     </form>
