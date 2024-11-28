@@ -1,0 +1,66 @@
+/* form.css */
+
+/* General Styles */
+body {
+  font-family: Kantumruy Pro, sans-serif;
+  background-color: whitesmoke;
+  color: rgb(72, 71, 71);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: rgba(255, 221, 240, 0.5); /* Light pink background */
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: rgb(72, 71, 71);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: rgb(255, 182, 193); /* Light pink background */
+  color: white; /* White text color */
+  border: none; /* Remove default border */
+  border-radius: 12px; /* Rounded edges */
+  padding: 10px 20px; /* Padding for the button */
+  font-size: medium; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+button:hover {
+  background-color: rgb(93, 156, 236); /* Light blue background on hover */
+}
+
+button:active {
+  background-color: rgb(75, 0, 130); /* Indigo background on active */
+}
