@@ -19,7 +19,7 @@ body {
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
+  max-width: 600px;
   width: 100%;
   text-align: center;
   box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
@@ -85,4 +85,37 @@ button:hover {
 
 button:active {
   background-color: rgb(75, 0, 130); /* Indigo background on active */
+}
+
+/* Response page specific styles */
+.response-list {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.response-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.response-list li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.home-button {
+  display: inline-block;
+  background-color: rgb(255, 182, 193);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: rgb(93, 156, 236);
 }
